@@ -1,0 +1,32 @@
+﻿Création de Pickolot:
+
+
+
+1) Brainstorming
+:
+ - choix des outils et resources ( figma,git bash,icones8,pixabay...)
+
+2) Repartition des tâches:
+ 
+ Nico s'occupe du wireframing
+
+  Ifrane s'occupe du visuel
+
+  Wilfried s'occupe du git + structure du site html
+
+
+3)création et affectation des branch:
+ - irfane : nav + section2
+
+ - nicolas : slider + section1
+
+ - wilfried : contact + footer
+
+
+4)code review
+
+
+5)merging branch
+
+
+6)presentation 
