@@ -17,6 +17,9 @@
                 <a href="#">Contact</a>
                 <a href="#">Nous suivre</a>
             </nav>
+            <div class="col-sm-12 col-md-2">
+                <a href="carte.html">Commander</a>
+            </div>
             <h1>Pick'O'Lot</h1>
             <!-- Nicolas -->
         </header>
@@ -145,91 +148,101 @@
                 </form>
             </section>
             <section class="row bg-danger">
-                <h3 class="text-center">Votre assiette:</h3>
-                <div class="col-sm-12 col-md-4 offset-md-3">
+                <h3 class="text-center my-3">Votre commande :</h3>
+                <div class="col-sm-12 col-md-4 offset-md-4">
                     <form action="#" >
                         <fieldset>
-                            <legend>Votre identité</legend>
+                            <legend class="">Votre identité :</legend>
                             <ol>
-                                <li>
-                                    <label for="Nom">Nom :</label>
-                                    <input type="text" name="Nom" id="" name="Nom" placeholder="Nom">
+                                <li class=" my-1">
+                                    <label for="Nom" class="form-label">Nom :</label>
+                                    <input type="text" name="noom" id="" name="Nom" placeholder="Nom" class="form-control">
                                 </li>
-                                <li>
-                                    <label for="Prénom">Prénom :</label>
-                                    <input type="text" name="Prénom" id="" name="Prénom" placeholder="Prénom">
+                                <li class=" my-1">
+                                    <label for="prenom" class="form-label">Prénom :</label>
+                                    <input type="text" name="prenom" id="" name="prenom" placeholder="Prénom" class="form-control">
                                 </li>
-                                <li>
-                                    <label for="mail">Adresse mail :</label>
-                                    <input type="email" name="mail" id="" name="Adresse mail" placeholder="Adresse mail">
+                                <li class=" my-1">
+                                    <label for="mail" class="form-label">Adresse mail :</label>
+                                    <input type="email" name="mail" id="" name="Adresse mail" placeholder="Adresse mail" class="form-control">
                                 </li>
                             </ol>
                         </fieldset>
                         <fieldset>
-                            <legend>Adresse de livraison</legend>
+                            <legend>Adresse de livraison :</legend>
                             <ol>
                                 <li>
-                                    <label for="Adresse">Adresse :</label>
-                                    <textarea name="Adresse" id="" cols="15" rows="10"></textarea>
+                                    <label for="Adresse" class="form-label">Adresse :</label>
+                                    <textarea name="Adresse" id="" cols="15" rows="2" class="form-control"></textarea>
                                 </li>
-                                <li>
-                                    <label for="cp">Code postal</label>
-                                    <input type="text" name="cp" id="" name="Code postal" placeholder="Code postal">
+                                <li class=" my-1">
+                                    <label for="cp" class="form-label">Code postal</label>
+                                    <input type="text" name="cp" id="" name="Code postal" placeholder="Code postal" class="form-control">
                                 </li>
-                                <li>
-                                    <label for="Ville">Ville</label>
-                                    <input type="text" name="Ville" id="" name="Ville" placeholder=" Ville">
+                                <li class="my-1">
+                                    <label for="Ville" class="form-label">Ville</label>
+                                    <input type="text" name="Ville" id="" name="Ville" placeholder=" Ville" class="form-control">
                                 </li>
                             </ol>
                         </fieldset>
                         <fieldset>
-                            <legend>Informations de règlement</legend>
+                            <legend>Informations de règlement :</legend>
                             <ol>
                                 <li>
                                     <label for="cb">Type de carte bancaire :</label>
                                     <ul>
                                         <li style="list-style: none;">
-                                            <input type="checkbox" name="visa" id="" placeholder="">
+                                            <input type="checkbox" name="visa" id="visa" placeholder="">
                                             <label for="visa">Visa</label>
                                         </li>
                                         <li style="list-style: none;">
-                                            <input type="checkbox" name="Mastercard" id="" placeholder="">
+                                            <input type="checkbox" name="mastercard" id="mastercard" placeholder="">
                                             <label for="Mastercard">Mastercard</label>
+                                        </li>
+                                        <li style="list-style: none;">
+                                            <input type="checkbox" name="paypal" id="paypal" placeholder="">
+                                            <label for="paypal">Paypal</label>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <label for="cartenum">Numéro de carte</label>
-                                    <input type="text" name="cartenum" id="" name="Numéro de carte" placeholder="Numéro de carte">
+                                    <label for="cartenum" class="form-label">Numéro de carte</label>
+                                    <input type="text" name="cartenum" id="cartenum" name="Numéro de carte" placeholder="Numéro de carte" class="form-control">
                                 </li>
                                 <li>
-                                    <label for="pinnum">Code de sécurité :</label>
-                                    <input type="text" name="pinnum" id="" placeholder="Code de sécurité">
+                                    <label for="pinnum" class="form-label">Code de sécurité :</label>
+                                    <input type="text" name="pinnum" id="pinnum" placeholder="Code de sécurité" class="form-control">
                                 </li>
                                 <li>
-                                    <label for="usercard">Nom du titulaire :</label>
-                                    <input type="text" name="usercard" id="user" placeholder="Nom du titulaire">
+                                    <label for="usercard" class="form-label">Nom du titulaire :</label>
+                                    <input type="text" name="usercard" id="user" placeholder="Nom du titulaire" class="form-control">
                                 </li>
                             </ol>
                         </fieldset>
-                        <input type="button" value="J'achète">
+                        <input type="submit" value="J'achète" class="text-center btn btn-success mb-2">
                     </form>
                 </div>
             </section><!-- Wilfried section Contact -->
-            <section class="row">
+            <section class="row pb-5">
                 <div class="col text-center">
-                    <h3>Nous suivre :</h3>
-                    <img src="img/icons8-facebook-48.png" alt="" title="">
-                    <img src="img/icons8-instagram-48.png" alt="" title="">
-                    <img src="img/icons8-linkedin-48.png" alt="" title="">
-                    <img src="img/icons8-snapchat-squared-48.png" alt="" title="">
-                    <img src="img/icons8-twitter-48.png" alt="" title="">
+                    <h3 class="my-5">Nous suivre :</h3>
+                    <a href="https://fr-fr.facebook.com/" target="_blank"><img src="img/icons8-facebook-48.png" alt="facebook" title="logo facebook"></a>
+                    <a href="https://www.instagram.com/?hl=fr" target="_blank"><img src="img/icons8-instagram-48.png" alt="instagram" title="lodo instagram"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="img/icons8-linkedin-48.png" alt="linkedin" title="logo linkedin"></a>
+                    <a href="https://www.snapchat.com/l/fr-fr/" target="_blank"><img src="img/icons8-snapchat-squared-48.png" alt="snapchat" title="logo snapchat"></a>
+                    <a href="https://twitter.com/?lang=fr" target="_blank"><img src="img/icons8-twitter-48.png" alt="twiter" title="logo twitter"></a>
+                </div>
+                <div class="col-sm-12 text-center">
+                    <h3 class="my-5">Paiement sécurisé :</h3>
+                    <img src="img/icons8-visa-48.png" alt="visa" title="paiment visa">
+                    <img src="img/icons8-mastercard-48.png" alt="mastercard" title="paiment mastercard">
+                    <img src="img/icons8-paypal-48.png" alt="paypal" title="paiment paypal">
                 </div>
             </section>
         </main>
         <footer class="row bg-dark"><!-- Wilfried section Footer -->
-            <div class="col text-center">
-               <p><a href="">Copyright</a>/<a href="mentionslegales.html">Mentions Legales</a></p>
+            <div class="col text-center my-3">
+               <p class="text-white">Copyright © /<a href="mentionslegales.html"> Mentions Legales</a></p>
             </div>
         </footer>
     </div>

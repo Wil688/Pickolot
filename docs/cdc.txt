@@ -1,32 +1,37 @@
-﻿Création de Pickolot:
+﻿Création de Pick'O'Lot:
 
 
 
-1) Brainstorming
+1) Brainstorming 
 :
+
+ - qui fait quoi?
  - choix des outils et resources ( figma,git bash,icones8,pixabay...)
+ - plannification de la durée de travail de 2 jours
 
-2) Repartition des tâches:
+2) Repartition des tâches 1 :
+
  
- Nico s'occupe du wireframing
+- Nico s'occupe du wireframing
 
-  Ifrane s'occupe du visuel
+ - Ifrane s'occupe du visuel
 
-  Wilfried s'occupe du git + structure du site html
-
-
-3)création et affectation des branch:
- - irfane : nav + section2
-
- - nicolas : slider + section1
-
- - wilfried : contact + footer
+ - Wilfried s'occupe du git + structure du site html
 
 
-4)code review
+3) Création et affectation des tâches 2 :
 
+ - Irfane : nav + section services + images + css
+ - Nicolas : slider + section descriptions + mise en page + css
+ - Wilfried : contact + footer
+ + mentions légales + formulaires
 
-5)merging branch
+4) Code review
+ :
 
+- à 3 + 3ws Validator (cf résultats)
+
+5) Assemblage + Merging sur la branche Master
+ (teste) :
 
 6)presentation 
