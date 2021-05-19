@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/icons8-p-26.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Pick'O'Lot</title>
 </head>
+
 <body>
     <div class="container-fluid">
         <header class="row">
-            <nav class="col-sm-12 col-md-10 bg-dark"><!-- Irfane menu -->
-                <a href="#">A propos</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-                <a href="#">Nous suivre</a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <div class="container-fluid">
+                    <h1><a class="navbar-brand text-white" href="index.html"><img src="img/logo.jpg" id="logo" alt=""></a></h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon bg-success"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active  text-white" aria-current="page" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white" href="#social">Nous suivre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white" href="#"><img src="img/icons8-france-48.png"
+                                        alt="franÃ§ais"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white" href="#"><img src="img/icons8-great-britain-48.png"
+                                        alt="anglais"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white" href="#"><img src="img/icons8-italy-48.png"
+                                        alt="italien"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <div class="col-sm-12 col-md-2">
+            <!-- <div class="col-sm-12 col-md-2">
                 <a href="carte.html">Commander</a>
-            </div>
-            <h1>Pick'O'Lot</h1>
+            </div>-->
             <!-- Nicolas -->
         </header>
-        <main class="row">
-            <section class="row bg-success">
-                <div class="col">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatem, quae mollitia, beatae ullam deleniti, similique officia magnam cum qui eaque sit quia porro. At aliquam facere ea ut doloremque.</p>
-                </div>
-            </section><!-- Nicolas section description-->
-            <section class="row bg-white"><!-- Irfane section Services -->
-                <div class="col-sm-12 col-md-2 offset-md-1">
-                    <h3>Nos Entrées :</h3>
-                    <img src="img/icons8-p-26.png" class="img-thumbnail" style="width: 200px;height: 200px;" alt="...">
-                </div>
+        <main class="row menu">
+            <section class="row  my-4" id="entrees">
+                <!-- Irfane section Services -->
                 <div class="col-sm-12 col-md-3 offset-md-1">
-                    <h3>Description :</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, laboriosam incidunt. Quasi, hic. Omnis quae iusto repudiandae, cum quas reiciendis est sint nemo vitae placeat ullam ipsam mollitia tempore labore!</p>
+                    <h3>Nos Entrées :</h3>
+                    <img src="img/entrees.jpg" class="food" alt="...">
                 </div>
-                <form action="#" class="col-md-2">
+                <div class="col-sm-12 col-md-4">
+                    <h3>Description :</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, laboriosam incidunt. Quasi,
+                        hic. Omnis quae iusto repudiandae, cum quas reiciendis est sint nemo vitae placeat ullam ipsam
+                        mollitia tempore labore!</p>
+                </div>
+                <form action="#" class="col-sm-3 col-md-2">
                     <fieldset>
                         <legend>Choix :</legend>
                         <label for="salade">Salades :</label>
-                        <select name="salade" id="salade">
+                        <select name="salade" id="salade" class="form-select">
                             <option value="">--Indiquez votre choix--</option>
                             <option value="cesar">César</option>
                             <option value="aqua">Pêcheur</option>
@@ -51,32 +78,35 @@
                     </fieldset>
                 </form>
             </section>
-            <section class="row bg-white"><!-- Irfane section Services -->
-                <div class="col-sm-12 col-md-2 offset-md-1">
-                    <h3>Nos Plats :</h3>
-                    <img src="img/icons8-p-26.png" class="img-thumbnail" style="width: 200px;height: 200px;" alt="...">
-                </div>
+            <section class="row  my-4" id="plats">
+                <!-- Irfane section Services -->
                 <div class="col-sm-12 col-md-3 offset-md-1">
-                    <h3>Description :</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, laboriosam incidunt. Quasi, hic. Omnis quae iusto repudiandae, cum quas reiciendis est sint nemo vitae placeat ullam ipsam mollitia tempore labore!</p>
+                    <h3>Nos Plats :</h3>
+                    <img src="img/pizzas.jpg" class="food" alt="...">
                 </div>
-                <form action="#" class="col-md-2">
+                <div class="col-sm-12 col-md-4">
+                    <h3>Description :</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, laboriosam incidunt. Quasi,
+                        hic. Omnis quae iusto repudiandae, cum quas reiciendis est sint nemo vitae placeat ullam ipsam
+                        mollitia tempore labore!</p>
+                </div>
+                <form action="#" class="col-sm-3 col-md-2">
                     <fieldset>
                         <legend>Choix :</legend>
                         <label for="meal1">Pâtes :</label>
-                        <select name="meal" id="meal">
+                        <select name="meal" id="meal" class="form-select">
                             <option value="">--Indiquez votre choix--</option>
                             <option value="tortellini">Tortellini</option>
                             <option value="penne">Penne</option>
                         </select>
                         <label for="meal2">Pizzas :</label>
-                        <select name="meal" id="meal2">
+                        <select name="meal" id="meal2" class="form-select">
                             <option value="">--Indiquez votre choix--</option>
                             <option value="pizza1">Pizza 4 saisons</option>
-                            <option value="pizza2">Pizza 4 fromages</option> 
+                            <option value="pizza2">Pizza 4 fromages</option>
                         </select>
                         <label for="meal2">Plats :</label>
-                        <select name="meal" id="meal3">
+                        <select name="meal" id="meal3" class="form-select">
                             <option value="">--Indiquez votre choix--</option>
                             <option value="ossoBuco">Osso Buco</option>
                             <option value="milano">Escalope milanaise</option>
@@ -84,26 +114,29 @@
                     </fieldset>
                 </form>
             </section>
-            <section class="row bg-white"><!-- Irfane section Services -->
-                <div class="col-sm-12 col-md-2 offset-md-1">
-                    <h3>Nos Desserts :</h3>
-                    <img src="img/icons8-p-26.png" class="img-thumbnail" style="width: 200px;height: 200px;" alt="...">
-                </div>
+            <section class="row  my-4">
+                <!-- Irfane section Services -->
                 <div class="col-sm-12 col-md-3 offset-md-1">
+                    <h3>Nos Desserts :</h3>
+                    <img src="img/desserts.jpg" class="food" alt="...">
+                </div>
+                <div class="col-sm-12 col-md-4">
                     <h3>Description :</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, laboriosam incidunt. Quasi, hic. Omnis quae iusto repudiandae, cum quas reiciendis est sint nemo vitae placeat ullam ipsam mollitia tempore labore!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, laboriosam incidunt. Quasi,
+                        hic. Omnis quae iusto repudiandae, cum quas reiciendis est sint nemo vitae placeat ullam ipsam
+                        mollitia tempore labore!</p>
                 </div>
                 <form action="#" class="col-sm-3 col-md-2">
                     <fieldset>
                         <legend>Choix :</legend>
                         <label for="dessert1">Desserts :</label>
-                        <select name="dessert1" id="dessert1">
+                        <select name="dessert1" id="dessert1" class="form-select">
                             <option value="">--Indiquez votre choix--</option>
                             <option value="tiramisu">Tiramisu</option>
                             <option value="pannaCotta">Panacotta</option>
                         </select>
                         <label for="dessert2">Glaces :</label>
-                        <select name="dessert2" id="dessert2">
+                        <select name="dessert2" id="dessert2" class="form-select">
                             <option value="">--Indiquez votre choix--</option>
                             <option value="tiramisu">Glace fraise</option>
                             <option value="iceCream">Glace café</option>
@@ -111,34 +144,37 @@
                     </fieldset>
                 </form>
             </section>
-            <section class="row bg-white"><!-- Irfane section Services -->
-                <div class="col-sm-12 col-md-2 offset-md-1">
-                    <h3>Nos Boissons :</h3>
-                    <img src="img/icons8-p-26.png" class="img-thumbnail" style="width: 200px;height: 200px;" alt="...">
-                </div>
+            <section class="row my-4">
+                <!-- Irfane section Services -->
                 <div class="col-sm-12 col-md-3 offset-md-1">
-                    <h3>Description :</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, laboriosam incidunt. Quasi, hic. Omnis quae iusto repudiandae, cum quas reiciendis est sint nemo vitae placeat ullam ipsam mollitia tempore labore!</p>
+                    <h3>Nos Boissons :</h3>
+                    <img src="img/boissons.jpg" class="food" alt="...">
                 </div>
-                <form action="#" class="col-sm-3 col-md-2">
+                <div class="col-sm-12 col-md-4">
+                    <h3>Description :</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, laboriosam incidunt. Quasi,
+                        hic. Omnis quae iusto repudiandae, cum quas reiciendis est sint nemo vitae placeat ullam ipsam
+                        mollitia tempore labore!</p>
+                </div>
+                <form action="#" class="col-sm-3 col-md-2" >
                     <fieldset>
                         <legend>Choix :</legend>
                         <label for="water">Eaux :</label>
-                        <select name="water" id="drinks">
+                        <select name="water" id="drinks" class="form-select">
                             <option value="">--Indiquez votre choix--</option>
                             <option value="soft">Volvic</option>
                             <option value="bubble">Badoit</option>
                             <option value="sanpeligrinno">San Pellegrinno</option>
                         </select>
                         <label for="water">Vins :</label>
-                        <select name="wine" id="drinks">
+                        <select name="wine" id="drinks" class="form-select">
                             <option value="">--Indiquez votre choix--</option>
                             <option value="rhone">Côte du Rhone</option>
                             <option value="saintEmilien">Saint Émilien</option>
                             <option value="montBasillac">Mont Basillac</option>
                         </select>
                         <label for="water">Soda :</label>
-                        <select name="soda" id="drinks">
+                        <select name="soda" id="drinks" class="form-select">
                             <option value="">--Indiquez votre choix--</option>
                             <option value="coke">Coca-Cola</option>
                             <option value="sprite">Sprite</option>
@@ -147,8 +183,85 @@
                     </fieldset>
                 </form>
             </section>
-            <section class="row bg-danger">
-                <!--<h3 class="text-center my-3">Votre commande :</h3>
+    <!--<section class="row bg-danger">
+            <h3 class="text-center">Votre assiette:</h3>
+            <div class="col-sm-12 col-md-4 offset-md-3">
+                <section class="row bg-danger">
+                    <h3 class="text-center my-3">Votre commande :</h3>
+                    <div class="col-sm-12 col-md-4 offset-md-4">
+                        <form action="#" >
+                            <fieldset>
+                                <legend class="">Votre identité :</legend>
+                                <ol>
+                                    <li class=" my-1">
+                                        <label for="Nom" class="form-label">Nom :</label>
+                                        <input type="text" name="noom" id="" name="Nom" placeholder="Nom" class="form-control">
+                                    </li>
+                                    <li class=" my-1">
+                                        <label for="prenom" class="form-label">Prénom :</label>
+                                        <input type="text" name="prenom" id="" name="prenom" placeholder="Prénom" class="form-control">
+                                    </li>
+                                    <li class=" my-1">
+                                        <label for="mail" class="form-label">Adresse mail :</label>
+                                        <input type="email" name="mail" id="" name="Adresse mail" placeholder="Adresse mail" class="form-control">
+                                    </li>
+                                </ol>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Adresse de livraison :</legend>
+                                <ol>
+                                    <li>
+                                        <label for="Adresse" class="form-label">Adresse :</label>
+                                        <textarea name="Adresse" id="" cols="15" rows="2" class="form-control"></textarea>
+                                    </li>
+                                    <li class=" my-1">
+                                        <label for="cp" class="form-label">Code postal</label>
+                                        <input type="text" name="cp" id="" name="Code postal" placeholder="Code postal" class="form-control">
+                                    </li>
+                                    <li class="my-1">
+                                        <label for="Ville" class="form-label">Ville</label>
+                                        <input type="text" name="Ville" id="" name="Ville" placeholder=" Ville" class="form-control">
+                                    </li>
+                                </ol>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Informations de règlement :</legend>
+                                <ol>
+                                    <li>
+                                        <label for="cb">Type de carte bancaire :</label>
+                                        <ul>
+                                            <li style="list-style: none;">
+                                                <input type="checkbox" name="visa" id="visa" placeholder="">
+                                                <label for="visa">Visa</label>
+                                            </li>
+                                            <li style="list-style: none;">
+                                                <input type="checkbox" name="mastercard" id="mastercard" placeholder="">
+                                                <label for="Mastercard">Mastercard</label>
+                                            </li>
+                                            <li style="list-style: none;">
+                                                <input type="checkbox" name="paypal" id="paypal" placeholder="">
+                                                <label for="paypal">Paypal</label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <label for="cartenum" class="form-label">Numéro de carte</label>
+                                        <input type="text" name="cartenum" id="cartenum" name="Numéro de carte" placeholder="Numéro de carte" class="form-control">
+                                    </li>
+                                    <li>
+                                        <label for="pinnum" class="form-label">Code de sécurité :</label>
+                                        <input type="text" name="pinnum" id="pinnum" placeholder="Code de sécurité" class="form-control">
+                                    </li>
+                                    <li>
+                                        <label for="usercard" class="form-label">Nom du titulaire :</label>
+                                        <input type="text" name="usercard" id="user" placeholder="Nom du titulaire" class="form-control">
+                                    </li>
+                                </ol>
+                            </fieldset>
+                            <input type="submit" value="J'achète" class="text-center btn btn-success mb-2">
+                        </form>-->
+    <!-- <section class="row bg-danger">
+                <h3 class="text-center my-3">Votre commande :</h3>
                 <div class="col-sm-12 col-md-4 offset-md-4">
                     <form action="#" >
                         <fieldset>
@@ -220,31 +333,44 @@
                             </ol>
                         </fieldset>
                         <input type="submit" value="J'achète" class="text-center btn btn-success mb-2">
-                    </form>-->
+                    </form>
                 </div>
-            </section><!-- Wilfried section Contact -->
-            <section class="row pb-5">
+            </section> -->
+            <!-- Wilfried section Contact -->
+            <section class="row pb-5 bg-danger" id="social">
                 <div class="col text-center">
-                    <h3 class="my-5">Nous suivre :</h3>
-                    <a href="https://fr-fr.facebook.com/" target="_blank"><img src="img/icons8-facebook-48.png" alt="facebook" title="logo facebook"></a>
-                    <a href="https://www.instagram.com/?hl=fr" target="_blank"><img src="img/icons8-instagram-48.png" alt="instagram" title="lodo instagram"></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="img/icons8-linkedin-48.png" alt="linkedin" title="logo linkedin"></a>
-                    <a href="https://www.snapchat.com/l/fr-fr/" target="_blank"><img src="img/icons8-snapchat-squared-48.png" alt="snapchat" title="logo snapchat"></a>
-                    <a href="https://twitter.com/?lang=fr" target="_blank"><img src="img/icons8-twitter-48.png" alt="twiter" title="logo twitter"></a>
+                    <h3 class="my-3">Nous suivre :</h3>
+                    <a href="https://fr-fr.facebook.com/" target="_blank"><img src="img/icons8-facebook-48.png" alt="facebook"
+                            title="logo facebook" id="follow"></a>
+                    <a href="https://www.instagram.com/?hl=fr" target="_blank"><img src="img/icons8-instagram-48.png"
+                            alt="instagram" title="lodo instagram" id="follow"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="img/icons8-linkedin-48.png" alt="linkedin"
+                            title="logo linkedin" id="follow"></a>
+                    <a href="https://www.snapchat.com/l/fr-fr/" target="_blank"><img src="img/icons8-snapchat-squared-48.png"
+                            alt="snapchat" title="logo snapchat" id="follow"></a>
+                    <a href="https://twitter.com/?lang=fr" target="_blank"><img src="img/icons8-twitter-48.png" alt="twiter"
+                            title="logo twitter" id="follow"></a>
                 </div>
                 <div class="col-sm-12 text-center">
-                    <h3 class="my-5">Paiement sécurisé :</h3>
-                    <img src="img/icons8-visa-48.png" alt="visa" title="paiment visa">
-                    <img src="img/icons8-mastercard-48.png" alt="mastercard" title="paiment mastercard">
-                    <img src="img/icons8-paypal-48.png" alt="paypal" title="paiment paypal">
+                    <h3 class="my-3">Paiement sécurisé :</h3>
+                    <img src="img/icons8-visa-48.png" alt="visa" title="paiment visa" id="follow">
+                    <img src="img/icons8-mastercard-48.png" alt="mastercard" title="paiment mastercard" id="follow">
+                    <img src="img/icons8-paypal-48.png" alt="paypal" title="paiment paypal" id="follow">
                 </div>
             </section>
-        </main>
-        <footer class="row bg-dark"><!-- Wilfried section Footer -->
-            <div class="col text-center my-3">
-               <p class="text-white">Copyright © /<a href="mentionslegales.html"> Mentions Legales</a></p>
-            </div>
-        </footer>
+    </main>
+    <footer class="row bg-dark">
+        <!-- Wilfried section Footer -->
+        <div class="col text-center my-3">
+            <p class="text-white">Copyright © /<a href="mentionslegales.html"> Mentions Legales</a></p>
+        </div>
+    </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
 </body>
 </html>
